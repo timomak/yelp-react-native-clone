@@ -10,7 +10,7 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
       <TextInput
         style={styles.inputStyle}
         placeholder="Search"
-        autoCorrect={false}
+        //autoCorrect={false}
         onEndEditing={onTermSubmit}
         value={term}
         onChangeText={onTermChange}
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 15,
     marginTop: 10,
     flexDirection: "row",
+    marginBottom: 10,
   },
 
   inputStyle: {
